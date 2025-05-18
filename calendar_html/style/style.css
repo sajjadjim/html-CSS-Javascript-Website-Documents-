@@ -1,0 +1,76 @@
+.month_name{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 25px;
+    justify-content: space-around;
+    border: 2px solid black;
+    height: 40px;
+    padding-top: 3px;
+    width: auto;
+}
+.month_name a{
+    text-decoration: none;
+    color: rgba(51, 192, 46, 0.818);
+}
+h1{
+    color: red;
+    border: 4px dotted black;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+}
+.section1{
+    display: grid;
+    grid-template-columns: repeat(7 ,1fr);
+    gap: 25px;
+}
+.day{
+    margin: 5px;
+    background-color: coral;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 60px;
+    padding-top: 20px;
+    font-size: 25px;
+}
+.day_name{
+    margin: 5px;
+    background-color: rgb(235, 212, 204);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 60px;
+    padding-top: 20px;
+    font-size: 30px;
+}
+/* @media screen and (max-width:576px) {
+    .section{
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    gap: 25px;
+}
+} */
+@media screen and (max-width: 576px) {
+    .day, .day_name {
+        height: 40px;
+        width: auto;
+        font-size: 14px;
+    }
+    .section1 {
+        gap: 10px;
+    }
+}
+@media screen and (min-width:576px) and (max-width: 950px) {
+    .day, .day_name {
+        height: 40px;
+        width: 50px;
+        font-size: 14px;
+    }
+    .section1 {
+        gap: 10px;
+    }
+}
