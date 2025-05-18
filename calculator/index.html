@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col justify-center items-center h-screen bg-gray-200">
+    
+    <div class="w-11/12 max-w-xs bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500">
+        <div id="datetime" class="mb-4 text-xl font-semibold"></div>
+        <input type="text" id="display" class="w-full h-16 mb-4 text-2xl text-right p-3 bg-gray-100 rounded-md" disabled>
+        <div class="grid grid-cols-4 gap-3">
+            <button onclick="clearDisplay()" class="col-span-1 bg-red-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">C</button>
+            <button onclick="appendValue('/')" class="bg-orange-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">/</button>
+            <button onclick="appendValue('*')" class="bg-orange-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">*</button>
+            <button onclick="appendValue('-')" class="bg-orange-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">-</button>
+            <button onclick="appendValue('7')" class="bg-blue-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">7</button>
+            <button onclick="appendValue('8')" class="bg-blue-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">8</button>
+            <button onclick="appendValue('9')" class="bg-blue-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">9</button>
+            <button onclick="appendValue('+')" class="bg-orange-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">+</button>
+            <button onclick="appendValue('4')" class="bg-blue-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">4</button>
+            <button onclick="appendValue('5')" class="bg-blue-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">5</button>
+            <button onclick="appendValue('6')" class="bg-blue-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">6</button>
+            <button onclick="calculate()" class="row-span-2 bg-green-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">=</button>
+            <button onclick="appendValue('1')" class="bg-blue-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">1</button>
+            <button onclick="appendValue('2')" class="bg-blue-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">2</button>
+            <button onclick="appendValue('3')" class="bg-blue-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">3</button>
+            <button onclick="appendValue('0')" class="col-span-2 bg-blue-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">0</button>
+            <button onclick="appendValue('.')" class="bg-blue-500 text-white p-4 text-xl rounded-lg active:scale-90 transition-transform">.</button>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
