@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- daisy UI add Link  -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+            rel="stylesheet" type="text/css" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!-- tailwind add  -->
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <!-- css file  -->
+        <link rel="stylesheet" href="style.css">
+        <!-- awsome file import -->
+        <script src="https://kit.fontawesome.com/10a4595e8d.js"
+            crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="assets/icons8-login-100.png"
+            type="image/x-icon">
+        <title>Log-in</title>
+    </head>
+    <body class="bg-slate-600">
+        <!-- login section  -->
+        <section class="max-w-md min-h-screen mx-auto py-6 bg-white">
+            <div class="md:mt-50 mt-22">
+                <div><i
+                        class="fa-brands fa-telegram text-9xl ml-37 text-[#0874F2]"></i></div>
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="text-center lg:text-left">
+                    </div>
+                    <div
+                        class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <form class="fieldset">
+                                <label class="fieldset-label">Enter phone
+                                    number</label>
+                                <input value="01600101810" id="account-number"
+                                    type="number" class="input rounded-full"
+                                    placeholder="number enter" required />
+                                <label class="fieldset-label">PIN</label>
+                                <input id="pin" type="password"
+                                    class="input rounded-full"
+                                    placeholder="enter pin" required />
+                                <div><a class="link link-hover">Forgot
+                                        password?</a></div>
+                                <button id="login-btn"
+                                    class="btn btn-neutral mt-4 bg-[#0874F2] text-white font-bold text-xl border-none rounded-full">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="./script/script.js"></script>
+</html>

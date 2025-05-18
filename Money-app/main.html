@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- daisy UI add Link  -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+            rel="stylesheet" type="text/css" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!-- tailwind add  -->
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <!-- css file  -->
+        <link rel="stylesheet" href="style.css">
+        <!-- font awesome kit add  -->
+        <script src="https://kit.fontawesome.com/10a4595e8d.js"
+            crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="assets/app logo.png"
+            type="image/x-icon">
+        <title>ADD Money</title>
+    </head>
+    <body class="bg-slate-600">
+        <!-- login section  -->
+        <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+            <div class="bg-white rounded-b-2xl">
+                <!-- heading part -->
+                <div class="flex justify-evenly  items-center pt-5">
+                    <button id="main-button" class="cursor-pointer"><i
+                            class="fa-brands fa-telegram text-4xl text-[#0874F2] animate-bounce"></i></button>
+                    <!-- balance  -->
+                    <div><p class="font-bold text-3xl ">$<span
+                                id="main-balance">4500</span></p><p
+                            class="opacity-50">Available Balance</p></div>
+                    <div>
+                        <button id="log-out"
+                            class="border-2 border-[#0808081A] p-2 rounded-lg cursor-pointer"><i
+                                class="fa-solid fa-right-from-bracket"></i> Log
+                            Out</button>
+                    </div>
+                </div>
+                <!-- Icon app list Part  -->
+                <div class="mx-5 pb-[20px]">
+                    <h1 class="font-bold text-[24px] mt-[40px]">🔥 Welcome to
+                        Pay BY!</h1>
+                    <p class="opacity-70 text-[#08080880]">Enjoy easy and
+                        convenient financial services with us.<br> Cashout
+                        charge is low and </p>
+                    <!-- card section Icon -->
+                    <div class="grid grid-cols-3 mt-[24px]">
+                        <div id="add-money"
+                            class="h-[90px] cursor-pointer w-[123px] items-center flex flex-col py-[10px] border-[#0808081A] border-2 rounded-lg mb-[15px]"><img src="assets/add money.png" alt="">
+                           
+                            <p class="text-[#080808B3] font-semibold">Add
+                                Money</p>
+                        </div>
+                        <div id="cashout"
+                            class="h-[90px] cursor-pointer w-[123px] items-center flex flex-col py-[10px] border-[#0808081A] border-2 rounded-lg mb-[15px]">
+                           <img src="assets/cashout.png" alt="">
+                            <p
+                                class="text-[#080808B3] font-semibold">Cashout</p>
+                        </div>
+                        <div id="transfer-money"
+                            class="h-[90px] cursor-pointer w-[123px] items-center flex flex-col py-[20px] border-[#0808081A] border-2 rounded-lg mb-[15px]">
+                            <i
+                                class="fa-solid fa-money-bill-transfer text-[#0BD5DD] text-3xl"></i>
+                            <p class="text-[#080808B3] font-semibold">Transfer
+                                Money</p>
+                        </div>
+                        <div id="get-bonus"
+                            class="h-[90px] cursor-pointer w-[123px] items-center flex flex-col py-[10px] border-[#0808081A] border-2 rounded-lg mb-[15px]">
+                            <img src="assets/bonus.png" alt="">
+                            <p class="text-[#080808B3] font-semibold">Get
+                                Bonus</p>
+                        </div><div id="pay-bill"
+                            class="h-[90px] cursor-pointer w-[123px] items-center flex flex-col py-[10px] border-[#0808081A] border-2 rounded-lg mb-[15px]">
+                            <img src="assets/pay bill.png" alt="">
+                            <p class="text-[#080808B3] font-semibold">Pay
+                                Bill</p>
+                        </div>
+                        <div id="transaction"
+                            class="h-[90px] cursor-pointer w-[123px] items-center flex flex-col py-[10px] border-[#0808081A] border-2 rounded-lg mb-[15px]"><img src="assets/transition logo.png" alt="">
+                            
+                            <p
+                                class="text-[#080808B3] font-semibold">Transactions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="last-payment-status">
+                <div class="mt-[50px] mx-5">
+                    <div class="flex justify-between">
+                        <h1 class="font-bold text-xl">Latest Payment</h1>
+                        <p class="opacity-50">View All</p>
+                    </div>
+                    <!-- Last payment Card  -->
+                    <div>
+                        <div
+                            class="bg-white px-[15px] py-[13px] rounded-2xl flex justify-between mt-[12px]">
+                            <div class="flex gap-2">
+                                <p><i
+                                        class="fa-duotone fa-solid fa-bolt  text-3xl rounded-full bg-gray-100 p-3 text-[#F7A93B]"></i></p><span><h2
+                                        class="font-bold opacity-80">Electricity
+                                        Bill</h2><p>Yesterday 03:44
+                                        AM</p></span></div>
+                            <i
+                                class="fa-solid fa-ellipsis-vertical text-3xl mt-3 text-[#080808B3] opacity-70 cursor-pointer"></i>
+
+                        </div>
+                        <div
+                            class="bg-white px-[15px] py-[13px] rounded-2xl flex justify-between mt-[12px]">
+                            <div class="flex gap-2">
+                                <p><i
+                                        class="fa-solid fa-building-columns text-3xl rounded-full bg-gray-100 p-3 text-[#53c297]"></i></p><span><h2
+                                        class="font-bold opacity-80">Bank
+                                        Deposit</h2><p>Today 01:44
+                                        AM</p></span></div>
+                            <i
+                                class="fa-solid fa-ellipsis-vertical text-3xl mt-3 text-[#080808B3] opacity-70 cursor-pointer"></i>
+
+                        </div>
+                        <div
+                            class="bg-white px-[15px] py-[13px] rounded-2xl flex justify-between mt-[12px]">
+                            <div class="flex gap-2">
+                                <p><i
+                                        class="fa-solid fa-mobile-screen text-3xl rounded-full bg-gray-100 p-3 text-[#60a3ca]"></i></p><span><h2
+                                        class="font-bold opacity-80">Mobile
+                                        Recharge</h2><p>18 February 05:44
+                                        PM</p></span></div>
+                            <i
+                                class="fa-solid fa-ellipsis-vertical text-3xl mt-3 text-[#080808B3] opacity-70 cursor-pointer"></i>
+
+                        </div>
+                        <div
+                            class="bg-white px-[15px] py-[13px] rounded-2xl flex justify-between mt-[12px]">
+                            <div class="flex gap-2">
+                                <p><i
+                                        class="fa-solid fa-fire-flame-simple text-3xl rounded-full bg-gray-100 p-3 text-[#d63a3a]"></i></p><span><h2
+                                        class="font-bold opacity-80">Gas
+                                        Bill</h2><p>22 February 01:50
+                                        PM</p></span></div>
+                            <i
+                                class="fa-solid fa-ellipsis-vertical text-3xl mt-3 text-[#080808B3] opacity-70 cursor-pointer"></i>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!--1. ADD Money   -->
+                <section id="add-money11">
+                    <div class="mt-[50px] mx-5">
+                        <div>
+                            <h1 class="font-bold text-xl ml-5">ADD Money</h1>
+                        </div>
+                        <!-- ADD Money  -->
+                        <div class="shadow-lg ml-5 p-6 rounded-xl ">
+                            <div>
+                                <fieldset class="fieldset">
+                                    <legend class="fieldset-legend">Select A
+                                        Bank</legend>
+                                    <select id="select_bank" class="select rounded-full">
+                                        <option disabled selected>Select
+                                            Bank</option>
+                                        <option>Islami Bank</option>
+                                        <option>Brac bank</option>
+                                        <option>Midland Bank</option>
+                                        <option>DBBL</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div>
+                                <h1>Amount number</h1>
+                                <input value="01600101810" type="text"
+                                    placeholder="Type here"
+                                    class="input rounded-full" />
+                            </div>
+                            <div>
+                                <h1>Amount</h1>
+                                <input id="add-amount" type="number"
+                                    placeholder="Type here"
+                                    class="input rounded-full" />
+                            </div>
+                            <div>
+                                <h1>PIN</h1>
+                                <input id="pin-number" value="1234" type="text"
+                                    placeholder="Type here"
+                                    class="input rounded-full" />
+                            </div>
+                            <div class="text-center mr-2">
+                                <button id="add-money-submit"
+                                    class="bg-[#0874F2] text-white font-bold text-xl px-20 rounded-full py-2 cursor-pointer mt-3">Add
+                                    Money</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--2. cash out section  -->
+                <section id="cashout1">
+                    <div class="mt-[50px] mx-5">
+                        <div>
+                            <h1 class="font-bold text-xl ml-5">Cashout</h1>
+                        </div>
+                        <!-- cash out Money  -->
+                        <div class="shadow-lg ml-5 p-6 rounded-xl">
+
+                            <div>
+                                <h1>Agent number</h1>
+                                <input value="01822449464" type="text"
+                                    placeholder="Type here"
+                                    class="input rounded-full" />
+                            </div>
+                            <div>
+                                <h1>Amount</h1>
+                                <input id="cash-out-amount" type="number"
+                                    placeholder="Enter amount to withdraw"
+                                    class="input rounded-full" />
+                            </div>
+                            <div>
+                                <h1>PIN</h1>
+                                <input id="pin-number" value="1234" type="text"
+                                    placeholder="Type here"
+                                    class="input rounded-full" />
+                            </div>
+                            <div class="text-center mr-2">
+                                <button id="cash-out-submit"
+                                    class="bg-[#0874F2] text-white font-bold text-xl px-20 rounded-full py-2 cursor-pointer mt-3">Cash
+                                    out
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--3. Transfer Money section  -->
+                <section id="transfer-money1">
+                    <div class="mt-[50px] mx-5">
+                        <div>
+                            <h1 class="font-bold text-xl ml-5">Transfer
+                                Money</h1>
+                        </div>
+                        <!-- Transfer Money  -->
+                        <div class="shadow-lg ml-5 p-6 rounded-xl">
+
+                            <div>
+                                <h1>Account number</h1>
+                                <input id="transfer-account-number" value="01822339090" type="text"
+                                    placeholder="Type here"
+                                    class="input rounded-full" />
+                            </div>
+                            <div>
+                                <h1>Amount</h1>
+                                <input id="transfer-money-amount" type="number"
+                                    placeholder="Enter amount to transfer"
+                                    class="input rounded-full" />
+                            </div>
+                            <div>
+                                <h1>PIN</h1>
+                                <input id="pin-number" value="1234" type="text"
+                                    placeholder="Type here"
+                                    class="input rounded-full" />
+                            </div>
+                            <div class="text-center mr-2">
+                                <button id="transfer-money-submit"
+                                    class="bg-[#0874F2] text-white font-bold text-xl px-20 rounded-full py-2 cursor-pointer mt-3">Send
+                                    Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--4. Get Bonus  section  -->
+                <section id="get-bonus1">
+                    <div class="mt-[50px] mx-5">
+                        <div>
+                            <h1 class="font-bold text-xl ml-5">Get Bonus</h1>
+                        </div>
+                        <div class="shadow-lg ml-5 p-6 rounded-xl">
+
+                            <div>
+                                <h1>Enter bonus coupon</h1>
+                                <input id="coupon-code" type="text"
+                                    placeholder="Enter your coupon"
+                                    class="input rounded-full" />
+                            </div>
+                            <div class="text-center mr-2">
+                                <button id="get-bonus-submit"
+                                    class="bg-[#0874F2] text-white font-bold text-xl px-20 rounded-full py-2 cursor-pointer mt-3">Get
+                                    Bonus
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--5. Pay Bill   -->
+                <section id="pay-bill1">
+                    <div class="mt-[50px] mx-5">
+                        <div>
+                            <h1 class="font-bold text-xl ml-5">Pay Bill</h1>
+                        </div>
+                        <!-- Pay Bill  -->
+                        <div class="shadow-lg ml-5 p-6 rounded-xl ">
+                            <div>
+                                <fieldset class="fieldset">
+                                    <legend class="fieldset-legend">Select To
+                                        Pay</legend>
+                                    <select id="pay-Bill-option" class="select rounded-full">
+                                        <option disabled selected>Select
+                                            Biller</option>
+                                        <option>Water</option>
+                                        <option>Gas</option>
+                                        <option>Education</option>
+                                        <option>Credit card</option>
+                                        <option>Internet</option>
+                                        <option>Talephone</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div>
+                                <h1>Biller Account Number</h1>
+                                <input type="number"
+                                    placeholder="Enter account number"
+                                    class="input rounded-full" required />
+                            </div>
+                            <div>
+                                <h1>Amount to Pay</h1>
+                                <input id="bill-amount" type="number"
+                                    placeholder="Add Amount to pay"
+                                    class="input rounded-full" required />
+                            </div>
+                            <div>
+                                <h1>PIN</h1>
+                                <input id="pin-number" value="1234" type="text"
+                                    placeholder="Type here"
+                                    class="input rounded-full" />
+                            </div>
+                            <div class="text-center mr-2">
+                                <button id="pay-bill-submit"
+                                    class="bg-[#0874F2] text-white font-bold text-xl px-20 rounded-full py-2 cursor-pointer mt-3">Pay Bill</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--6. transaction-history -->
+                <section id="transaction-history1">
+                    <div class="mt-[50px] mx-5">
+                        <div>
+                            <h1 class="font-bold text-xl ml-5 text-red-500 text-center animate-pulse">Transaction
+                                History</h1>
+                        </div>
+                        <div class="shadow-lg ml-5 p-6 rounded-xl">
+                            <div id="transaction-container">
+                                <!-- <p type="text"class="input mt-2"></p>  -->
+                                <!-- <div class="bg-white rounded-xl px-2">
+                                    <h1 class="text-green-500">ADD money From Bkash</h1>
+                                    <p>Amount :$4500</p>
+                                    <h1>Transition Id</h1>
+                                 </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <script src="script/addmoney.js"></script>
+            <script src="./script/troggle.js"></script>
+            <script src="./script/cashout.js"></script>
+            <script src="./script/transfer money.js"></script>
+            <script src="./script/payBill.js"></script>
+            <script src="./script/Transaction History.js"></script>
+            <script src="./script/getBonus.js"></script>
+
+        </body>
+    </html>
