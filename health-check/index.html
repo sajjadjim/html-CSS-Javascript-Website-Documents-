@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Checker</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-center grid justify-center">
+    <div id="welcome-page" class="container">
+        <p id="datetime"></p>
+        <h1> ❤️‍🩹Welcome 🧑‍⚕️</h1>
+        <p>Enter your name to continue:</p>
+        <input type="text" id="username" placeholder="Your Name">
+        <button class="" onclick="goToOptions()">Next</button>
+    </div>
+
+    <div id="options-page" class="container hidden">
+        <h1 id="greeting"></h1>
+        <p>Select an option:</p>
+        <button onclick="showSection('bmi')">BMI Calculator</button>
+        <button onclick="showSection('age')">Age Calculator</button>
+        <button onclick="showSection('suggestions')">Human Body Age Suggestions</button>
+    </div>
+
+    <div id="bmi-section" class="container hidden">
+        <h1>BMI Calculator</h1>
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <input type="number" id="height-feet" placeholder="Height (feet)">
+        <input type="number" id="height-inches" placeholder="Height (inches)">
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <p id="bmi-result"></p>
+        <p id="health-suggestion"></p>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <div id="age-section" class="container hidden">
+        <h1>Age Calculator</h1>
+        <input type="date" id="dob">
+        <button onclick="calculateAge()">Calculate Age</button>
+        <p id="age-result"></p>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <div id="suggestions-section" class="container hidden">
+        <h1 style="font-size: 20px; font-weight:700;">Human Body Age Suggestions</h1>
+        <ol>
+            <li>1.Eat a balanced diet rich in vitamins and minerals.</li>
+            <li>2.Exercise regularly to maintain a healthy body.</li>
+            <li>3.Stay hydrated and get enough sleep.</li>
+            <li>4.Reduce stress and practice mindfulness.</li>
+        </ol>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <script src="script.js">
+    </script>
+    <script src="date time.js"></script>
+</body>
+</html>
