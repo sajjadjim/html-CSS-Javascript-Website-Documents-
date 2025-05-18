@@ -1,0 +1,20 @@
+.project-btn{
+    margin-left: 2rem;
+    border: 1px solid rgb(201, 198, 198);
+    border-radius: 7px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.project-btn:hover{
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+    border: 1px solid #FFA500;
+}
+.project_arrow{
+    color: black;
+}
+.project_arrow:hover{
+    color: #FFA500;
+}
